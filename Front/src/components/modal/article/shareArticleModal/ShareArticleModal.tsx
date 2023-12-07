@@ -70,7 +70,7 @@ const ShareArticleModal: FC<IProps> = ({ open, setOpen, id }) => {
                 <div className='line'>
                     <h1>Medium url</h1>
                     {values.mediumlUrl ? (
-                        <a className='link' href={values.mediumlUrl}>{values.mediumlUrl}</a>
+                        <a className='link'target='_blank' rel="noreferrer" href={values.mediumlUrl}>{values.mediumlUrl}</a>
                     ) : (
                         <Button loading={isLaoding} disabled={isLaoding} onClick={uploadToMedium}>Upload</Button>
                     )}
